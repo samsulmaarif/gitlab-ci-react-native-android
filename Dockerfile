@@ -9,7 +9,7 @@ FROM ubuntu:17.04
 MAINTAINER Sascha-Matthias Kulawik <sascha@kulawik.de>
 
 RUN echo "Android SDK 26.0.2"
-ENV VERSION_SDK_TOOLS "3859397"
+ENV VERSION_SDK_TOOLS "4333796"
 
 ENV ANDROID_HOME "/sdk"
 ENV PATH "$PATH:${ANDROID_HOME}/tools"
@@ -66,7 +66,7 @@ RUN echo "Installing Fastlane 2.61.0" \
 	&& gem cleanup
 
 ENV GRADLE_HOME /opt/gradle
-ENV GRADLE_VERSION 3.3
+ENV GRADLE_VERSION 4.4
 
 RUN echo "Downloading Gradle" \
 	&& wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"
